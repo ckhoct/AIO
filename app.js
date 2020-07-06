@@ -1,6 +1,7 @@
 var ifDebug = false;
 
 window.onload = function () {
+  if (window.location.protocol !== "https:") return window.location.protocol = "https";
   var websiteTitle = document.getElementById("websiteTitle");
   var websiteIntro = document.getElementById("websiteIntro");
   var headerTitle = document.getElementById("headerTitle");
